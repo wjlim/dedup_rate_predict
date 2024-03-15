@@ -1,0 +1,12 @@
+README.md
+setup.py
+kmer_analysis/__init__.py
+kmer_analysis/kmer_processor.py
+kmer_analysis.egg-info/PKG-INFO
+kmer_analysis.egg-info/SOURCES.txt
+kmer_analysis.egg-info/dependency_links.txt
+kmer_analysis.egg-info/entry_points.txt
+kmer_analysis.egg-info/requires.txt
+kmer_analysis.egg-info/top_level.txt
+kmer_hashing/__init__.py
+kmer_hashing/kmer_hashing.c

@@ -10,7 +10,7 @@ import sys
 import kmer_hashing
 
 class KmerProcessor:
-    def __init__(self, fastq_file_forward, k, genome_size, output_prefix, array_size=10**9, threads=8, chunk_size=300000):
+    def __init__(self, fastq_file_forward, k, genome_size, output_prefix, array_size=10**9, threads=8, block_size=100*1024*1024, chunk_size=300000):
         self.fastq_file_forward = fastq_file_forward
         self.k = k
         self.genome_size = genome_size

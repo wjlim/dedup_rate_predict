@@ -1,4 +1,4 @@
-# K-mer Analysis Package 🧬
+# K-mer Analysis v.1.0 Package 🧬
 
 This package provides powerful tools for analyzing k-mers in FASTQ files with non-overlapping method, optimized for genomics data like the human genome. Leveraging Cython, it handles large datasets efficiently, making it an essential tool for genomic researchers.
 

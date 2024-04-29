@@ -1,7 +1,9 @@
 README.md
 setup.py
 kmer_analysis/__init__.py
+kmer_analysis/fetching_fasta.hash_table.py
 kmer_analysis/kmer_processor.py
+kmer_analysis/reference_hash_table.py
 kmer_analysis.egg-info/PKG-INFO
 kmer_analysis.egg-info/SOURCES.txt
 kmer_analysis.egg-info/dependency_links.txt

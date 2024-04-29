@@ -11,7 +11,7 @@ extensions = [
 
 setup(
     name="kmer_analysis",
-    version="0.1",
+    version="1.0",
     author="Wonjun Lim",
     author_email="cerutx@gmail.com",
     description="A package for Raw Data Quality Control by K-mer analysis",
@@ -20,6 +20,9 @@ setup(
     url="https://github.com/wjlim/kmer_analysis",
     packages=find_packages(),
     ext_modules=cythonize(extensions),
+    package_data = {
+            "hg38.k13.repeat_counter" : ["data/hg38.k13.repeats.pkl"]
+        },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

@@ -14,6 +14,7 @@ This package provides powerful tools for predicting deduplication rates in FASTQ
 - Python 3.6 or higher
 - Cython
 - psutil
+- matplotlib
 
 ## 🛠 Installation
 

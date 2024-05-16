@@ -10,11 +10,11 @@ extensions = [
 ]
 
 setup(
-    name="kmer_analysis",
+    name="dedup_rate_predict",
     version="1.0",
     author="Wonjun Lim",
     author_email="cerutx@gmail.com",
-    description="A package for Raw Data Quality Control by K-mer analysis",
+    description="A package for Raw Data Quality Control",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/wjlim/dedup_rate_predict",

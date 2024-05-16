@@ -17,12 +17,9 @@ setup(
     description="A package for Raw Data Quality Control by K-mer analysis",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/wjlim/kmer_analysis",
+    url="https://github.com/wjlim/dedup_rate_predict",
     packages=find_packages(),
     ext_modules=cythonize(extensions),
-    package_data = {
-            "hg38.k13.repeat_counter" : ["data/hg38.k13.repeats.pkl"]
-        },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

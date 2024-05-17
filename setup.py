@@ -3,7 +3,7 @@ from Cython.Build import cythonize
 
 extensions = [
     Extension(
-        name="kmer_hashing",
+        name="kmer_hashing.kmer_hashing",
         sources=["kmer_hashing/kmer_hashing.pyx"],
         extra_compile_args=['-O2', '-fPIC'],
     ),

@@ -1,2 +1,0 @@
-[console_scripts]
-kmer_processor = kmer_analysis.kmer_processor:main

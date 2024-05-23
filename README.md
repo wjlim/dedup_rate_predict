@@ -28,7 +28,7 @@ pip install .
 ## 🚀 Usage
 The package comes with a command-line tool dedup_predictor for easy use:
 ```bash
-kmer_processor -f /path/to/your/forward_reads.fastq.gz -o /path/to/output_prefix
+dedup_predictor -f /path/to/your/forward_reads.fastq.gz -o /path/to/output_prefix
 ```
 ## 📊 Default Configuration Performance
 With the default configuration (block_size of 100MB and chunk_size of 300,000), here's what you can expect:
@@ -44,8 +44,8 @@ This benchmark is based on processing the forward reads raw data of a human whol
 Enhance performance by customizing block, chunk sizes and max block with -b ,-c and -m flags:
 
 ```bash
-kmer_processor --help
-usage: kmer_processor [-h] -f IFILE -o OUTPUT [-p THREADS] [-c CHUNK_SIZE] [-a ARRAY_SIZE] [-b BLOCK_SIZE] [-m MAX_BLOCK_SIZE] [-u CUTOFF]
+dedup_predictor --help
+usage: dedup_predictor [-h] -f IFILE -o OUTPUT [-p THREADS] [-c CHUNK_SIZE] [-a ARRAY_SIZE] [-b BLOCK_SIZE] [-m MAX_BLOCK_SIZE] [-u CUTOFF]
 
 Analyze FASTQ files to calculate PCR duplicates and mean depth.
 

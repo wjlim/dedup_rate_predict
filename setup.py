@@ -3,7 +3,7 @@ from Cython.Build import cythonize
 
 extensions = [
     Extension(
-        name="kmer_hashing.kmer_hashing",
+        name="kmer_hashing",
         sources=["kmer_hashing/kmer_hashing.pyx"],
         extra_compile_args=['-O2', '-fPIC'],
     ),
@@ -28,7 +28,7 @@ setup(
     python_requires='>=3.6',
     entry_points={
         'console_scripts': [
-            'kmer_processor=kmer_analysis.kmer_processor:main',
+            'dedup_rate_predict=dedup_rate_predict.dedup_rate_predict:main',
         ],
     },
     install_requires=[

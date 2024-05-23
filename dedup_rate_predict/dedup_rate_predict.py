@@ -11,7 +11,7 @@ import psutil
 from collections import Counter
 from kmer_hashing.kmer_hashing import hash_kmer
 
-class KmerProcessor:
+class DedupRatePredict:
     def __init__(self, fastq_file,output_prefix, array_size = 10e9, threads = 8, block_size=500*1024*1024, chunk_size=10000, max_block_size = 20*1024*1024*1024):
         self.fastq_file = fastq_file
         self.output_prefix = output_prefix
@@ -136,7 +136,7 @@ def main():
     start_time = time.time()
     args = parse_arguments()
     
-    kmer_processor = KmerProcessor(args.ifile, args.output, array_size = args.array_size, threads = args.threads,
+    kmer_processor = DedupRatePredict(args.ifile, args.output, array_size = args.array_size, threads = args.threads,
                                     block_size=args.block_size, chunk_size=args.chunk_size, max_block_size = args.max_block_size)
     initial_memory = psutil.Process(os.getpid()).memory_info().rss / (1024 ** 2)
     multiprocessing.set_start_method('spawn')

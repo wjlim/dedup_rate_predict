@@ -22,7 +22,7 @@ This package provides powerful tools for predicting deduplication rates in FASTQ
 
 ```bash
 git clone https://github.com/wjlim/dedup_rate_predict.git
-cd kmer_analysis
+cd dedup_rate_predict/
 pip install .
 ```
 ## 🚀 Usage
